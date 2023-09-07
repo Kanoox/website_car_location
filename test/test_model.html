@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/detect_model.js"></script>
+</head>
+<body>
+    <h1>List Records voitures</h1>
+    
+    <form action="../php/get_model.php" method="POST">
+        <label for="vehicle-category">Vehicle Category:</label>
+        <select name="vehicle-category" id="vehicle-category" required>
+            <option value="citadine">Citadine</option>
+            <option value="suv">SUV</option>
+            <option value="ancienne">Ancienne</option>
+            <option value="luxe">Luxe</option>
+        </select>
+    
+        <label for="vehicle-model">Vehicle Model:</label>
+        <select name="vehicle-model" id="vehicle-model" required>
+            <!-- Les options pour la sélection de la marque et du modèle seront ajoutées dynamiquement ici -->
+        </select>
+    
+        <input type="hidden" name="list_records" value="true">
+        <input type="submit" value="List All Records">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FILTRE TEST</title>
+</head>
+<body>
+    <h1>Liste de vos rdv:</h1>
+    
+    <form action="../php/update_bdd.php" method="GET">
+        <label for="Filtre">Filtre:</label>
+        <input type="text" name="Filtre" id="Filtre" required placeholder="Veuillez entrer votre email.">
+
+        <input type="hidden" name="list_records" value="true">
+        <input type="submit" value="Vos RDV">
+    </form>
+</body>
+</html>

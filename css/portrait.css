@@ -1,0 +1,134 @@
+* {
+  font-family: sans-serif;
+  margin: 0%;
+  padding: 0%;
+}
+.title{
+  color: rgb(7, 8, 8);
+  font-style: normal;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 20px;
+}
+.portrait-section-photos {
+    background-color: white;
+    padding-bottom: 50px;
+  }
+  footer {
+    background-color: #f4f3f3;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    height: 80px;
+  }
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  #logo {
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .lien-conteneur-photo {
+    position: relative;
+  }
+  
+  .photo-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+  }
+  
+  .lien-conteneur-photo:hover .photo-hover {
+    display: flex;
+  }
+  @media screen and (max-width: 996px) {
+    .text2 {
+      font-size: 2vw;
+    }
+  }
+  #logo{
+    text-align: center;
+}
+/* ====================================================== */
+#image-container{
+  margin-left: 50%;
+  margin: 20px;
+}
+.text {
+  position: absolute;
+  right: 50px; /* Adjust the value as per your preference */
+  top: 50%;
+  transform: translateY(-50%);
+  height: 400px;
+  width: 40%;
+}
+.text2 {
+  margin: 40px;
+}
+
+.text h2{
+  margin: 40px;
+}
+.listee li {
+  margin-bottom: 20px;
+}
+#displayed-image{
+  width: 50%;
+  height: 400px;
+}
+.div1{
+  margin: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.pdiv1{
+  font-family: BrownBold,sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 22px;
+  margin: 10px 0 8px;
+}
+.pint{
+  color: #5f7081;
+  font-family: BrownRegular,sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  text-transform: capitalize;
+}
+header{
+  background-image: url('../html/img/par4.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+}
+.commende{
+  display: inline-block;
+  background: linear-gradient(#8e86b5, #acaeed);
+  color: white;
+  border-radius: 50px;
+  padding: 8px 17px;
+  margin-top: 10px;
+  height: 40px;
+}
+body{
+  background-color: rgb(209, 212, 125);
+}

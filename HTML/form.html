@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form TEST</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/detect_model.js"></script>
+</head>
+<body>
+    <h1>Form</h1>
+    
+    <form id="main-form" action="../php/formulaire.php" method="POST">
+        <div class="main-component">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="text" name="phone" id="phone" required>
+            
+            <label for="address">Address:</label>
+            <input type="text" name="address" id="address" required>
+            
+            <label for="appointment-date">Appointment Date:</label>
+            <input type="date" name="appointment-date" id="appointment-date" required>
+            
+            <div class="sub-component">
+                <label for="vehicle-category">Vehicle Category:</label>
+                <select name="vehicle-category" id="vehicle-category" required>
+                    <option value="citadine">Citadine</option>
+                    <option value="suv">SUV</option>
+                    <option value="ancienne">Ancienne</option>
+                    <option value="luxe">Luxe</option>
+                </select>
+    
+                <label for="vehicle-model">Vehicle Model:</label>
+                <select name="vehicle-model" id="vehicle-model" required>
+                    <!-- Les options pour la sélection de la marque et du modèle seront ajoutées dynamiquement ici -->
+                </select>
+                
+                <!-- Champ de formulaire caché pour l'ID de la voiture -->
+                <input type="hidden" name="vehicle-id" id="vehicle-id">
+            </div>
+    
+            <input type="submit" name="main-save" value="Submit">
+        </div>
+    </form>
+    
+    <form id="sub-form" action="../php/get_model.php" method="POST"></form>
+</body>
+</html>
